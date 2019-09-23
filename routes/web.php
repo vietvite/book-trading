@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'bookController@home');;
+
+Route::get('/detail/{id}', 'bookController@detail');
+
+Route::get('/category/{categoryId}', 'bookController@category');
+
+Route::get('/search', 'bookController@category');

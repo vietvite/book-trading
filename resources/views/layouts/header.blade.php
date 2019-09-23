@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-0 d-flex justify-content-between">
-  <a class="navbar-brand" href="#">Book Store</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+  <a class="navbar-brand" href="{{ url('/') }}">Book Store</a>
 
   <!-- Account button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#account" aria-controls="account" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +23,7 @@
 
   <div class="collapse navbar-collapse flex-grow-0" id="account">
     <div class="pl-md-3 my-3 my-md-0 text-center">
-      <button class="btn btn-sm btn-light font-weight-bold border-0">Đăng nhập</button>
-      <button class="btn btn-sm btn-primary ml-2 px-3 border-0">Đăng ký</button>
+      <button class="btn btn-sm btn-light font-weight-bold border-0"><i class="fas fa-user-circle"></i> Tài khoản</button>
     </div>
   </div>
 </nav>

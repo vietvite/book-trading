@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookTable extends Migration
+class AddCategoryIdToBookTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +14,12 @@ class CreateBookTable extends Migration
     public function up()
     {
         Schema::create('books', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('id');
             $table->string('bookname');
             $table->string('author');
-            $table->text('description');
+            $table->smallInteger('categoryId');
+            $table->foreign('categoryId')->references('id')->on('categories');
+            $table->text('description')->null();
             $table->integer('price');
             $table->integer('oldPrice');
             $table->integer('quantity');

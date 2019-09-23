@@ -5,9 +5,9 @@
 @section('content')
 
 <!-- Flash sale -->
-@include('flashsale')
+@include('components.flashsale')
 
 <!-- Bookshelf by categories -->
-@include('categories')
+@include('components.sections')
 
 @endsection
