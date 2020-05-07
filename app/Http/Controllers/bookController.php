@@ -76,6 +76,16 @@ class bookController extends Controller
         return view('pages.detail', compact('bookDetail', 'categories', 'category'));
     }
 
+    /**
+     * 
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function search(Request $req)
+    {
+        $keyword = $req->query('search');
+        return view('pages.search', compact('keyword'));
+    }
 
     /**
      * Store a newly created resource in storage.

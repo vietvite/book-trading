@@ -4,6 +4,8 @@
 
 @section('content')
 
+{{ $keyword }}
+<!-- 
 <div class="mt-5">
   <h2 class="h2 d-inline pr-1 pr-md-3 text-dark">{{ $category->categoryName }}</h2>
   <hr>
@@ -27,6 +29,6 @@
     @endforeach
   </div>
 
-</div>
+</div> -->
 
 @endsection

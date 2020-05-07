@@ -12,7 +12,7 @@
     @foreach($category['categoryGroup'] as $book)
     <div class="col-12 col-md-3 pb-1 pb-md-3">
       <a href="/detail/{{ $book->id }}" class="text-decoration-none text-dark">
-        <div class="hover-shadow card border-0" style="//width: 15rem;">
+        <div class="hover-shadow card border-0" style="width: 15rem;">
           <img src="{{ asset('images/books/matbiec.jpg') }}" class="card-img-top" alt="img">
           <div class="card-body text-center pt-0">
             <h6 class="card-title mb-1" title="{{ $book->bookname }}">{{ Str::limit($book->bookname, 20) }}</h6>

@@ -34,8 +34,8 @@
 
 <!-- Book description -->
 <div class="mt-2 mt-md-5">
-<h3 class="h3">Mô tả:</h3>
-<hr>
-<p>{{ $bookDetail->description }}</p>
+  <h3 class="h3">Mô tả:</h3>
+  <hr>
+  <p>{{ $bookDetail->description }}</p>
 </div>
 @endsection('content')

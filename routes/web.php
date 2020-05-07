@@ -17,4 +17,4 @@ Route::get('/detail/{id}', 'bookController@detail');
 
 Route::get('/category/{categoryId}', 'bookController@category');
 
-Route::get('/search', 'bookController@category');
+Route::get('/search', 'bookController@search');
